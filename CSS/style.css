@@ -1,0 +1,355 @@
+/* DISEÑO GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header,
+footer {
+    background-color: rgb(6, 6, 6);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo a img {
+    width: 75px;
+    height: 75px;
+    margin: 10px 10px 10px 0px;
+}
+
+.barra-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    list-style: none;
+    margin: 40px;
+}
+
+
+.barra-nav li a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+
+.footer-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-pag a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: chartreuse;
+}
+
+
+/* Diseño del MAIN de html */
+
+.main-index {
+    background-color: rgb(200, 200, 200);
+}
+
+
+.main-tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/fondoimg.jpeg);
+    background-size: cover;
+    height: 200px;
+    margin: 0px 0px 20px 0px;
+}
+
+.main-tit h1 a {
+    text-decoration: none;
+    color: rgb(106, 211, 1);
+    font-size: 50px;
+}
+
+.section-tit h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 10, 0);
+    margin: 0px 0px 20px 0px;
+}
+
+.areas-gym {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 3fr);
+    grid-template-areas:
+        "box-1 box-2 box-3"
+    ;
+}
+
+.funcional {
+    grid-area: box-1;
+    margin: 0px 80px 0px 80px;
+}
+
+.gimnasio {
+    grid-area: box-2;
+    margin: 0px 80px 0px 80px;
+}
+
+.crossfit {
+    grid-area: box-3;
+    margin: 0px 80px 0px 80px;
+}
+
+.funcional img {
+    width: 200px;
+    height: 200px;
+}
+
+.gimnasio img {
+    width: 200px;
+    height: 200px;
+}
+
+.crossfit img {
+    width: 200px;
+    height: 200px;
+}
+
+.funcional div h2 a {
+    text-decoration: none;
+    color: rgb(0, 10, 0);
+}
+
+.funcional div h2 a:hover {
+    color: rgb(106, 211, 1);
+}
+
+.gimnasio div h2 a {
+    text-decoration: none;
+    color: rgb(0, 10, 0);
+}
+
+.gimnasio div h2 a:hover {
+    color: rgb(106, 211, 1);
+}
+
+.crossfit div h2 a {
+    text-decoration: none;
+    color: rgb(0, 10, 0);
+}
+
+.crossfit div h2 a:hover {
+    color: rgb(106, 211, 1);
+}
+
+/* Diseño main Fitness */
+
+.main-fitness{
+    background-color: rgb(244, 244, 244);
+}
+
+.main-fitness-tit{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 30px 0px;
+}
+
+
+.fitness-box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitness-box1 img {
+    width: 300px;
+    height: 300px;
+}
+
+.fitness-box1 p {
+    align-self: center;
+    font-weight: bold;
+}
+
+
+.fitness-box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitness-box2 img {
+    width: 300px;
+    height: 300px;
+}
+
+.fitness-box2 p {
+    align-self: center;
+    font-weight: bold;
+}
+
+
+/* Diseño main Nosotros */
+
+.main-nosotros{
+    background-color: rgb(200, 200, 200);
+}
+
+.main-nosotros-tit{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.main-nosotros-tit h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.seccion-nos1 p{
+    align-self: center;
+    font-weight: 400;
+    margin: 0px 10px 20px 10px;
+}
+
+.seccion-nos2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-nos2 iframe{
+    width: 200px;
+    height: 200px;
+}
+
+/* Main contacto */
+
+.main-contacto{
+    background-image: url(../assets/img/contac.fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.tit-contacto{
+    color: rgb(106, 211, 1);
+    font-size: 30px;
+    margin: 0px 0px 20px 50px;
+}
+
+.form-contac{
+    width: 400px;
+    background-color: transparent;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px ;
+}
+
+.form-cont {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(0, 10, 0);
+}
+
+.form-enviar{
+    width: 100%;
+    background-color: rgb(106, 211, 1);
+    border: none;
+    padding: 10px;
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+}
+
+/* MAIN BULL ID */
+
+.main-bullid{
+    background-color: rgb(19, 19, 19);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "box-1"
+    "box-2"
+    ;
+    place-content: center;
+}
+.main-bullid section div a{
+    align-items: center;
+}
+
+.main-section-id{
+    grid-area: box-1;
+    display: flex;
+    align-items: center;
+}
+
+.main-section-id-form{
+    grid-area: box-2;
+} 
+
+.logo-bullid img{
+    width: 100px ;
+    height: 100px;
+    
+}
+
+.form-bullid{
+    width: 400px;
+    background-color: transparent;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px ;
+}
+
+.form-bullid{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(0, 10, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
